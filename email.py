@@ -7,9 +7,9 @@ def email_alert(subject, body, to):
     msg['subject'] = subject
     msg['to'] = to
 
-    user = "achyuth.emidi@gmail.com"
+    user = "XXXXX sender_mail XXXXX"
     msg['from'] = user
-    password = "hqrmqolkekqhpyky"
+    password = "XXX password_after_setting_up_two-factor-auth XXXXXX"
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
@@ -18,4 +18,4 @@ def email_alert(subject, body, to):
     server.quit()
 
 if __name__ == '__main__' :
-    email_alert("hey", "hello world", "achyuthking9@gmail.com")
+    email_alert("hey", "hello world", "rec_email")
