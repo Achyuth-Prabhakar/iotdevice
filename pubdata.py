@@ -10,9 +10,9 @@ def email_alert(subject, body, to):
     msg['subject'] = subject
     msg['to'] = to
 
-    user = "achyuth.emidi@gmail.com"
+    user = "XXXXX sender_mail XXXXX"
     msg['from'] = user
-    password = "hqrmqolkekqhpyky"
+    password = "XXX password_after_setting_up_two-factor-auth XXXXXX"
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
@@ -23,12 +23,12 @@ def email_alert(subject, body, to):
 
 myConfig = { 
     "identity": {
-        "orgId": "6inswm",
-        "typeId": "doms",
-        "deviceId":"12345"
+        "orgId": "XXXXXXX",
+        "typeId": "XXXXXXXXX",
+        "deviceId":"XXXXXXX"
     },
     "auth": {
-        "token": "K@nHHWbnSwLcqVLpIg"
+        "token": "XXXXXXXXXXXXXXXX"
     }
 }
 
@@ -44,7 +44,7 @@ while True:
     hum=random.randint(0,50)
     duration=random.randint(1,5)
     if duration == 5 :
-        email_alert ("ALERT", "You have been standing in the radiation for too long", "achyuthking9@gmail.com")
+        email_alert ("ALERT", "You have been standing in the radiation for too long", "XXXXXXX res_mail XXXXX")
     uSvh=round(random.uniform(0,1),2)
     cpm=round(random.uniform(1,5),2)
     myData={'temperature':temp, 'humidity':hum,'duration':duration, 'uSvh':uSvh, 'cpm':cpm}
