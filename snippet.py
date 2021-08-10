@@ -4,12 +4,12 @@ import random
 import names
 myConfig = { 
     "identity": {
-        "orgId": "6inswm",
-        "typeId": "doms",
-        "deviceId":"12345"
+        "orgId": "xxxxxx",
+        "typeId": "xxxxx",
+        "deviceId":"xxxxx"
     },
     "auth": {
-        "token": "K@nHHWbnSwLcqVLpIg"
+        "token": "xxxxxxxxx"
     }
 }
 
